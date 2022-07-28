@@ -9,16 +9,16 @@ using Todo.Domain.Commands.Contracts;
 
 namespace Todo.Domain.Commands
 {
-    public class MarkTodoAsDoneCommand : Notifiable, ICommand
+    public class MarkAsUndoneCommand : Notifiable, ICommand
     {
         public Guid Id { get; set; }
         public string User { get; set; }
 
-        public MarkTodoAsDoneCommand()
+        public MarkAsUndoneCommand()
         {
         }
 
-        public MarkTodoAsDoneCommand(Guid id, string user)
+        public MarkAsUndoneCommand(Guid id, string user)
         {
             Id = id;
             User = user;
